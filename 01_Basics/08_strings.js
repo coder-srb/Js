@@ -3,7 +3,7 @@ const repoCount = 50
 // we should avoid this type of out-dated syntax, instead of this use String interpolation.
 console.log("Hello my name is "+name +" and my repo count is "+repoCount );
 
-// using String interpolation.
+// String interpolation using back ticks ``.
 console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
 
 const gameName = new String('hitesh-hc-com'); // another way of String object creation
