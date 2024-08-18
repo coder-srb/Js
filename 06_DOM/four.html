@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code | DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    // // 1st method (not optimised for large-scale project)
+    // function addLanguage(langName){
+    //     const li = document.createElement('li')
+    //     li.innerHTML = `${langName}`
+    //     document.querySelector(".language").appendChild(li)
+    // }
+    // addLanguage("python")
+    // addLanguage("TypeScript")
+
+    // // 2nd method (optimised way)
+    // function addOptiLanguage(newLang){
+    //     const li = document.createElement('li')
+    //     const addList = document.createTextNode(newLang)
+    //     li.appendChild(addList);
+    //     document.querySelector(".language").appendChild(li)
+    // }
+    // addOptiLanguage("java")
+    // addOptiLanguage("C/C++")
+
+    // // Edit
+    // const secondLang = document.querySelector("li:nth-child(2)")
+    // // secondLang.innerHTML = "Mojo" // not optimised for larger-project
+    // let newLi = document.createElement('li')
+    // newLi.textContent = "Ruby"
+    // secondLang.replaceWith(newLi)
+
+    // //edit (another way)
+    // const firstLang = document.querySelector("li:nth-child(1)")
+    // firstLang.outerHTML = '<li>Cobol</li>'
+
+    // //remove
+    // const lastLang = document.querySelector("li:last-child")
+    // lastLang.remove()
+
+
+
+    function addList(l){
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(l));
+        document.querySelector(".language").appendChild(li);
+    }
+    addList("Java");
+
+    const secLang = document.querySelector("li:nth-child(2)");
+    let newList = document.createElement("li");
+    newList.appendChild(document.createTextNode("srb"));
+    secLang.replaceWith(newList)
+
+    document.querySelector("li:first-child").remove();
+
+    
+
+
+</script>
+</html>
