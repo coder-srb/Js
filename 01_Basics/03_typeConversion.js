@@ -41,3 +41,93 @@ console.log(score4InNumber); // '1' [true => 1, false => 0]
 // 1 => true; 0 => false
 // "" => false
 // "hitesh" => true
+
+
+//  --- Explicit conversion & Implicit conversion ---
+
+// Number to String
+let num = 42;
+let strNumExplicit = String(num); // Explicit conversion
+let strNumImplicit = num + "";    // Implicit conversion
+console.log(strNumExplicit);      // "42"
+console.log(typeof strNumExplicit); // "string"
+console.log(strNumImplicit);      // "42"
+console.log(typeof strNumImplicit); // "string"
+
+// String to Number
+let str = "123";
+let numStrExplicit = Number(str); // Explicit conversion
+let numStrImplicit = +str;        // Implicit conversion
+console.log(numStrExplicit);      // 123
+console.log(typeof numStrExplicit); // "number"
+console.log(numStrImplicit);      // 123
+console.log(typeof numStrImplicit); // "number"
+
+// Boolean to Number
+let boolTrue = true;
+let numBoolTrueExplicit = Number(boolTrue); // Explicit conversion
+let numBoolTrueImplicit = +boolTrue;        // Implicit conversion
+console.log(numBoolTrueExplicit);       // 1
+console.log(typeof numBoolTrueExplicit); // "number"
+console.log(numBoolTrueImplicit);       // 1
+console.log(typeof numBoolTrueImplicit); // "number"
+
+let boolFalse = false;
+let numBoolFalseExplicit = Number(boolFalse); // Explicit conversion
+let numBoolFalseImplicit = +boolFalse;        // Implicit conversion
+console.log(numBoolFalseExplicit);       // 0
+console.log(typeof numBoolFalseExplicit); // "number"
+console.log(numBoolFalseImplicit);       // 0
+console.log(typeof numBoolFalseImplicit); // "number"
+
+// Number to Boolean
+let zeroNum = 0;
+let boolZeroExplicit = Boolean(zeroNum); // Explicit conversion
+let boolZeroImplicit = !!zeroNum;        // Implicit conversion
+console.log(boolZeroExplicit);       // false
+console.log(typeof boolZeroExplicit); // "boolean"
+console.log(boolZeroImplicit);       // false
+console.log(typeof boolZeroImplicit); // "boolean"
+
+let nonZeroNum = 5;
+let boolNonZeroExplicit = Boolean(nonZeroNum); // Explicit conversion
+let boolNonZeroImplicit = !!nonZeroNum;        // Implicit conversion
+console.log(boolNonZeroExplicit);       // true
+console.log(typeof boolNonZeroExplicit); // "boolean"
+console.log(boolNonZeroImplicit);       // true
+console.log(typeof boolNonZeroImplicit); // "boolean"
+
+// String to Boolean
+let nonEmptyStr = "Hello";
+let boolStrExplicit = Boolean(nonEmptyStr); // Explicit conversion
+let boolStrImplicit = !!nonEmptyStr;        // Implicit conversion
+console.log(boolStrExplicit);       // true
+console.log(typeof boolStrExplicit); // "boolean"
+console.log(boolStrImplicit);       // true
+console.log(typeof boolStrImplicit); // "boolean"
+
+let emptyStr = "";
+let boolEmptyStrExplicit = Boolean(emptyStr); // Explicit conversion
+let boolEmptyStrImplicit = !!emptyStr;        // Implicit conversion
+console.log(boolEmptyStrExplicit);       // false
+console.log(typeof boolEmptyStrExplicit); // "boolean"
+console.log(boolEmptyStrImplicit);       // false
+console.log(typeof boolEmptyStrImplicit); // "boolean"
+
+// Null to Number
+let nullVar = null;
+let numNullExplicit = Number(nullVar); // Explicit conversion
+let numNullImplicit = +nullVar;        // Implicit conversion
+console.log(numNullExplicit);       // 0
+console.log(typeof numNullExplicit); // "number"
+console.log(numNullImplicit);       // 0
+console.log(typeof numNullImplicit); // "number"
+
+// Undefined to Number
+let undefinedVar;
+let numUndefinedExplicit = Number(undefinedVar); // Explicit conversion
+let numUndefinedImplicit = +undefinedVar;        // Implicit conversion
+console.log(numUndefinedExplicit);       // NaN
+console.log(typeof numUndefinedExplicit); // "number"
+console.log(numUndefinedImplicit);       // NaN
+console.log(typeof numUndefinedImplicit); // "number"
