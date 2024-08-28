@@ -28,6 +28,7 @@ console.log(typeof num); // "number"
 let str = "Hello, World!";
 console.log(typeof str); // "string"
 
+
 // Boolean
 let isJavaScriptFun = true;
 console.log(typeof isJavaScriptFun); // "boolean"
@@ -61,4 +62,5 @@ function greet() {
   return "Hello!";
 }
 console.log(typeof greet); // "function"
+console.log(typeof greet()); // "String" bcz the function returns a string.
 
