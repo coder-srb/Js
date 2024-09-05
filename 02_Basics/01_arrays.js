@@ -28,7 +28,14 @@ const myArr2 = new Array(1, 2, 3, 4);
 // ---------------------------------------------------------------------------------------------------------------
 
 // 2. **Accessing Elements**
-console.log(myArr[1]);  // Output: 1
+console.log(myArr[1]);  
+const arr = new Array(1, 2, 3, 4);
+console.log(arr);  // Output: [ 1, 2, 3, 4 ]
+console.log(arr[0]);  // Output: 1
+arr[0] = 7;
+console.log(arr); // Output: [ 7, 2, 3, 4 ]
+arr[4] = 8;
+console.log(arr); // Output: [7, 2, 3, 4, 8]
 
 // ---------------------------------------------------------------------------------------------------------------
 
@@ -94,7 +101,7 @@ console.log(arrD.join(" "));  // Output: 'Hello World'
 
 //  c) **`reverse()`** - Reverses the order of elements in an array (modifies original array).
 myArr.reverse();
-console.log(myArr);  // Output: [6, 5, 4, 3, 9]
+console.log(myArr);  // Output: [6, 5, 4, 3, 9] 
 
 //  d) **`sort()`** - Sorts the elements of an array alphabetically or numerically (modifies original array).
 myArr.sort();  // Sorts numerically or lexicographically
@@ -117,7 +124,6 @@ console.log(squaredArr);  // Output: [36, 25, 16, 9, 81] (square of each element
 const evenNumbers = myArr.filter(item => item % 2 === 0);
 console.log(evenNumbers);  // Output: [6, 4] (only even numbers)
 
-// d) **`reduce()`** - Reduces the array to a single value by applying a function.
-
+// d) **`reduce()`** - Reduces the array to a single value by applying a function. [array.reduce(callback(accumulator, currentValue, index, array), initialValue);]
 const sum = myArr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 console.log(sum);  // Output: sum of all elements
