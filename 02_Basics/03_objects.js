@@ -1,7 +1,40 @@
 // object declaration can be done in 2ways :- literal (no singleton) & constructor (singleton)
+// --- Object Creation: Literal vs Constructor (Singleton) ---
 
-// const obj1 = new object()   // singleton object
-// const onj2 = {}  // non-singleton object
+// Object Literal:
+      // An object literal is the simplest way to create an object in JavaScript. You can define and initialize an object in
+      // one step using curly braces {}. Each object created using this method is unique, and there is no shared state across them.
+
+const obj1 = {};
+const obj2 = {}; // A new, unique object
+const obj = { a: 1 };  // {key: value} pair
+console.log(obj1 === obj2); // false, different independent objects.
+
+      // This method creates objects by directly specifying key-value pairs in curly braces. Each invocation creates a new object.
+      // In this case, obj1 and obj2 are two different objects in memory, even though they both have an empty structure.
+      // They are not "singletons" since each object instance is separate and independent.
+
+
+// Object Constructor (Singleton):
+      // A singleton is a design pattern where only one instance of a class or object can exist. In JavaScript, you can use a constructor function,
+      // or more commonly, a class to implement a singleton pattern, ensuring that only one instance of the object is created.
+
+class Singleton {
+  constructor() {
+    if (!Singleton.instance) {
+      Singleton.instance = this;
+    }
+    return Singleton.instance;
+  }
+}
+
+const obj3 = new Singleton();
+const obj4 = new Singleton();
+
+console.log(obj3 === obj4); // true, same instance
+
+      // In this case, both obj1 and obj2 refer to the same instance because the class Singleton ensures
+      // that only one instance is created and returned every time the constructor is called. This is the singleton pattern in action.
 
 
 // object literals
