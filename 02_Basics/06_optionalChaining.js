@@ -1,3 +1,19 @@
+
+
+// nested objects
+const regularUser = {
+    email: "some@gmail.com",
+    fullname: {
+        userfullname: {
+            firstname: "hitesh",
+            lastname: "choudhary"
+        }
+    }
+}
+console.log(regularUser.fullname.userfullname.firstname);
+
+
+
 // --- Optional Chaining in JavaScript Objects ---
 
 // Optional Chaining (`?.`)** is a feature introduced in JavaScript (ES2020) that allows you to safely access deeply
