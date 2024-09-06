@@ -81,3 +81,24 @@ const [first4, [second4, third4]] = nestedArray;
 
 console.log(second4); // 2
 console.log(third4);  // 3
+
+
+// ------------------------------------------------------------------------------------------------------------
+
+
+//API => here keys are also written in double quotes ""
+
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
+
+// example : https://jsonapi.org/examples/
+// useful beutifier for API : https://jsonformatter.org/
