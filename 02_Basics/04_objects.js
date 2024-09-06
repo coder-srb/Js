@@ -106,36 +106,3 @@ console.log(Object.entries(tinderUser));  // returns the complete object
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));  // returns a boolean value checking the mentioned property present or not
 console.log(tinderUser.hasOwnProperty('isLogged'));  // false
-
-
-// ---------------------------------------------------------------------------------------------------------------------------------
-
-
-// destructuing of objects
-const course = {
-    coursename: "js in hindi",
-    price: "999",
-    courseInstructor: "hitesh"
-}
-console.log(course.courseInstructor);  // we can aslo access this with optimised way
-
-const {courseInstructor} = course
-console.log(courseInstructor);
-
-const {courseInstructor: instr} = course  // we can also create our varibale
-console.log(instr);
-
-
-//API 
-
-// {
-//     "name": "hitesh",
-//     "coursename": "js in hindi",
-//     "price": "free"
-// }
-
-[
-    {},
-    {},
-    {}
-]
