@@ -53,6 +53,7 @@ if (true) {
 
 // ++++++++++++++++++ interesting ++++++++++++++++++
 // https://www.freecodecamp.org/news/what-is-hoisting-in-javascript-3/
+// https://www.geeksforgeeks.org/javascript-hoisting/
 
 console.log(addone(5))  // no error
 
