@@ -1,3 +1,12 @@
+// Immediately Invoked Function Expression (IIFE)
+
+/**
+ * Each IIFE is executed as soon as it's defined.
+ * Variables inside IIFEs are protected from the global scope, which ensures that we avoid global pollution.
+ * The module pattern allows us to encapsulate functionality and expose only the needed methods, while keeping the data (counter or result) private.
+ */
+
+
 // Example 1: IIFE with no parameters (Basic)
 (function() {
     console.log("This IIFE runs immediately without parameters!");
@@ -75,11 +84,3 @@ mathOperations.add(3, 4);        // Output: Sum: 7
 mathOperations.multiply(5, 6);   // Output: Product: 30
 console.log("Current Result:", mathOperations.getResult());  // Output: Current Result: 30
 mathOperations.reset();          // Output: Result reset to: 0
-
-
-
-/**
- * Each IIFE is executed as soon as it's defined.
- * Variables inside IIFEs are protected from the global scope, which ensures that we avoid global pollution.
- * The module pattern allows us to encapsulate functionality and expose only the needed methods, while keeping the data (counter or result) private.
- */
